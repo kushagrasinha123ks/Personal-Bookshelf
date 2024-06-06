@@ -6,7 +6,6 @@ import Loader from "../Loader/Loader";
 const Book = () => {
     const { loading , books, bookShelf, setbookShelf } = useContext(AppContext);
 
-    console.log(books);
     if(loading) return <Loader />;
 
     const getBooks = books.map(book => ({
