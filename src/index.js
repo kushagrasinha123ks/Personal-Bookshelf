@@ -16,9 +16,9 @@ root.render(
       <BrowserRouter basename='/personal-bookshelf'>
         <Routes>
           <Route path = "/" element = {<Home />}>
-            <Route path= "book" element ={<Book />}/>
+            <Route path= "/book" element ={<Book />}/>
           </Route>
-          <Route path= "shelf" element = {<Shelf/>}/>
+          <Route path= "/shelf" element = {<Shelf/>}/>
           <Route path = "*" element = {<NotFound />} />
         </Routes>
       </BrowserRouter>
