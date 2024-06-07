@@ -13,7 +13,7 @@ import { AppProvider } from './context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppProvider>
-      <BrowserRouter basename="/personal-bookshelf">
+      <BrowserRouter basename='/personal-bookshelf'>
         <Routes>
           <Route path = "/" element = {<Home />}>
             <Route path= "book" element ={<Book />}/>

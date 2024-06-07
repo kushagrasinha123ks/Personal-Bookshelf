@@ -1,6 +1,6 @@
 import React, { useState, createContext, useCallback ,useEffect } from "react";
 
-const api = "https://openlibrary.org/search.json?q=";
+const api = "https://openlibrary.org/search.json?title=";
 
 export const AppContext = createContext();
 
@@ -17,7 +17,7 @@ export const AppProvider = ({ children }) => {
         setLoading(true);
         try {
             if(search){
-                const response = await fetch(`${api}${search}&limit=10&page=1`);
+                const response = await fetch(`${api}${search}`);
                 const data = await response.json();
                 const {docs} = data;
                 if(docs){
