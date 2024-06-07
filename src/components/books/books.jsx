@@ -7,8 +7,6 @@ const Book = () => {
     const { loading , books, bookShelf, setbookShelf } = useContext(AppContext);
 
     if(loading) return <Loader />;
-    
-    // console.log(books);
 
     const getBooks = books.map(book => ({
         id: book.id,
