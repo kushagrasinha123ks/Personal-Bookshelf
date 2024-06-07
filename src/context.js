@@ -45,7 +45,7 @@ export const AppProvider = ({ children }) => {
 
     useEffect(() => {
         fetchBooks();
-    }, [search]);
+    }, [search, fetchBooks]);
 
     useEffect(() => {
         localStorage.setItem('bookShelf', JSON.stringify(bookShelf));
