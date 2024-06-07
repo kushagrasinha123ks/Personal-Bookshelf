@@ -1,6 +1,5 @@
 {
   "name": "personal-bookshelf",
-  "homepage": "https://kushargrasinha123ks.github.io/personal-bookshelf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
